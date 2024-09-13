@@ -1,0 +1,63 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-bg);
+}
+
+:root {
+  --font-fam: "Karla", sans-serif;
+  --body-bg: #1e1f25;
+  --grad-color1: #eeaf61;
+  --grad-color2: #fb9062;
+  --grad-color3: #ee5d6c;
+  --grad-color4: #ce4993;
+  --grad-colors: #6a0d83;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-hover-color: #fff;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-border {
+  padding: 2px;
+  background: linear-gradient(
+    115deg,
+    var(--grad-color1),
+    var(--grad-color2),
+    var(--grad-color3),
+    var(--grad-color4)
+  );
+  transition: background 0.25s ease-in-out;
+}
+.button-border:hover {
+  background: linear-gradient(
+    230deg,
+    var(--grad-color4),
+    var(--grad-color3),
+    var(--grad-color2),
+    var(--grad-color1)
+  );
+}
+.button {
+  border: none;
+  font-family: var(--font-fam);
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  padding: 1em 1.5em;
+  transition: padding 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.button-border:hover .button {
+  color: var(--btn-hover-color);
+  padding: 1.1em 1.6em;
+}

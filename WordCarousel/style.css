@@ -1,0 +1,43 @@
+:root {
+  --bg-word: #5134ff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1:after {
+  content: "";
+  animation: 6s swap infinite;
+  background: var(--bg-word);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+@keyframes swap {
+  0% {
+    content: "Node.js";
+  }
+  25% {
+    content: "Express.js";
+  }
+  50% {
+    content: "MongoDB";
+  }
+  75% {
+    content: "React.js";
+  }
+  100% {
+    content: "Node.js";
+  }
+}

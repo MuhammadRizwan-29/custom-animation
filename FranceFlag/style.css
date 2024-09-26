@@ -1,0 +1,46 @@
+:root {
+  --red: #ed2938;
+  --white: #fff;
+  --blue: #002495;
+  --flag-height: 250px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flag-france {
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 3 / 2);
+  margin: 0 auto;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* .strip {
+  flex-grow: 1;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+} */
+
+.strip {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+.white {
+  background-color: var(--white);
+}

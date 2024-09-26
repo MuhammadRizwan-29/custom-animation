@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container > div {
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0.5em;
+  animation: rotate infinite 1.5s;
+}
+.container > div:nth-child(1) {
+  background: red;
+}
+.container > div:nth-child(2) {
+  background: orange;
+}
+.container > div:nth-child(3) {
+  background: blue;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}

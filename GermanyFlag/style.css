@@ -1,0 +1,42 @@
+:root {
+  --black: #080808;
+  --red: #de0002;
+  --orange: #ffce00;
+  --flag-height: 250px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flag-germany {
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 5 / 3);
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+}
+
+/* .strip {
+  flex-grow: 1;
+} */
+
+.black {
+  background-color: var(--black);
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.orange {
+  background-color: var(--orange);
+}

@@ -1,0 +1,51 @@
+:root {
+  --stg-1: 25%;
+  --stg-2: 50%;
+  --stg-3: 75%;
+  --stg-4: 100%;
+  --progbar-bg: lightgrey;
+  --stg-1-bg: red;
+  --stg-2-bg: orangered;
+  --stg-3-bg: greenyellow;
+  --stg-4-bg: green;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  width: 60%;
+}
+.progress-bar {
+  height: 60px;
+  background: var(--progbar-bg);
+  border-radius: 50px;
+}
+.prog-status {
+  height: 60px;
+  border-radius: 50px;
+}
+.stage-1 {
+  width: var(--stg-1);
+  background: var(--stg-1-bg);
+}
+.stage-2 {
+  width: var(--stg-2);
+  background: var(--stg-2-bg);
+}
+.stage-3 {
+  width: var(--stg-3);
+  background: var(--stg-3-bg);
+}
+.stage-4 {
+  width: var(--stg-4);
+  background: var(--stg-4-bg);
+}

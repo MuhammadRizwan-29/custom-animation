@@ -1,0 +1,34 @@
+:root {
+  --card-height: 300px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.card {
+  width: calc(var(--card-height) * 2 / 3);
+  height: var(--card-height);
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: grid;
+  padding: 0.5em;
+}
+.card .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}
+.card .bottom {
+  transform: rotate(180deg);
+}
+.card :where(.top, .bottom) > div:last-child {
+  font-size: 1.5em;
+}

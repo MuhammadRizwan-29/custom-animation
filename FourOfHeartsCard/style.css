@@ -1,0 +1,45 @@
+:root {
+  --card-height: 300px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  width: calc(var(--card-height) * 2 / 3);
+  height: var(--card-height);
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  color: red;
+}
+.card .middlle {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5em;
+}
+.card :where(.right, .left) div {
+  font-size: 1.5em;
+}
+.card .right {
+  align-self: end;
+  transform: rotate(180deg);
+}
+.card .middlle :where(div:nth-child(3), div:nth-child(4)) {
+  transform: scaleY(-1);
+}
